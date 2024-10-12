@@ -1,0 +1,12 @@
+<ActionBar title="My Profile"></ActionBar>
+
+<ScrollView>
+  <StackLayout class="p-4">
+    <TextField [(ngModel)]="user.name" hint="Name" class="input m-b-10"></TextField>
+    <TextField [(ngModel)]="user.phone" hint="Phone" keyboardType="phone" class="input m-b-10"></TextField>
+    <TextField [(ngModel)]="user.email" hint="Email" keyboardType="email" class="input m-b-10"></TextField>
+    <TextView [(ngModel)]="user.medicalInfo" hint="Medical Information" class="input m-b-10"></TextView>
+    <TextField [(ngModel)]="user.emergencyContact" hint="Emergency Contact" class="input m-b-10"></TextField>
+    <Button text="Save Profile" (tap)="saveProfile()" class="btn btn-primary"></Button>
+  </StackLayout>
+</ScrollView>
